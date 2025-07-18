@@ -51,14 +51,6 @@ function trimText() {
     updateHistory(result);
 }
 
-function splitText() {
-    let text = document.getElementById("inputText").value;
-    let delimiter = prompt("Enter delimiter (e.g., space, comma):");
-    let result = text.split(delimiter).join(" | ");
-    document.getElementById("result").innerText = result;
-    updateHistory(result);
-}
-
 function countWords() {
     let text = document.getElementById("inputText").value.trim();
     let words = text.length > 0 ? text.split(/\s+/).length : 0;
